@@ -1,3 +1,6 @@
+#https://atcoder.jp/contests/typical90/tasks/typical90_d
+#行と列の和をそれぞれ事前に計算して各i,jに対してその和-A[i][j]を表示した
+
 H,W=map(int,input().split())
 A=[]
 gyou=[0 for _ in range(H)]
