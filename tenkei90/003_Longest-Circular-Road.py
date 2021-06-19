@@ -1,3 +1,7 @@
+#https://atcoder.jp/contests/typical90/tasks/typical90_c
+#ある点からBFSで一番遠いところまで移動、
+#そこからさらにBFSで端まで移動、この際いくつの道路を通ったかも記録した
+
 from collections import deque
 
 N=int(input())
