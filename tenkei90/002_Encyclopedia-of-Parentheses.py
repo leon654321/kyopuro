@@ -1,6 +1,7 @@
 #2  Encyclopedia of Parentheses（★3）AC
+#問題文
 #https://atcoder.jp/contests/typical90/tasks/typical90_b
-#このときはpermutationを知らなかったためwhile文を使ってそれらしきものを実装した
+#このときはpermutationsを知らなかったためwhile文を使ってそれらしきものを実装した
 
 N=int(input())
 if N%2==0:
