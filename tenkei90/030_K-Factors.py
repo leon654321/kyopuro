@@ -1,3 +1,4 @@
+#問題文
 #https://atcoder.jp/contests/typical90/tasks/typical90_ad
 
 N,K=map(int,input().split())
