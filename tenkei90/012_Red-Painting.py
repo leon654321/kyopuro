@@ -1,3 +1,8 @@
+#問題文
+#https://atcoder.jp/contests/typical90/tasks/typical90_l
+
+#赤マスを上下左右でUnionFindあとは普通にやるだけ
+
 import sys
 sys.setrecursionlimit((10 ** 7))  # 変更
 myinput=input#sys.stdin.readline
