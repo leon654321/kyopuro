@@ -1,24 +1,24 @@
-import sys
-myinput=input#sys.stdin.readline
-import math
-mdeg=math.degrees
-msin=math.sin
-mcos=math.cos
-matan=math.atan
-msq=math.sqrt
-mpi=math.pi
+#問題文
+#https://atcoder.jp/contests/typical90/tasks/typical90_r
 
-T=int(myinput())
-L,X,Y=map(int,myinput().split())
-q=t=int(myinput())
+import sys
+input=sys.stdin.readline
+from math import degrees,sin,cos,atan,sqrt,pi
+
+
+#入力
+T=int(input())
+L,X,Y=map(int,input().split())
+q=int(input())
+
 
 for _ in range(q):
-    e=int(myinput())
+    e=int(input())
     #x=X
-    y=-(L/2)*msin(e/T*2*mpi)-Y
-    z=(L/2)*(1-mcos(e/T*2*mpi))
-    if X==0 and y==0:
-        print(0.00000000)
-        continue
-    ans=mdeg(matan(z/msq(X**2+y**2)))
+    
+    #e分後のy座標、z座標
+    y=-(L/2)*sin(e/T*2*pi)-Y
+    z=(L/2)*(1-cos(e/T*2*pi))
+    
+    ans=degrees(atan(z/sqrt(X**2+y**2)))
     print(ans)
