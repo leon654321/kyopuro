@@ -72,7 +72,7 @@ N=int(input())
 A=list(map(int,input().split()))
 
 Z=N//2 #答えの最大値
-uf=UnionFind(2*10**5+1)
+uf=UnionFind(2*10**5+1) #インスタンス生成
         
 for i in range(N//2):
     if uf.find(A[i])==uf.find(A[N-1-i]):
