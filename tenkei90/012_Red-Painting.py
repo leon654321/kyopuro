@@ -4,7 +4,7 @@
 #赤マスを上下左右でUnionFindあとは普通にやるだけ
 
 import sys
-sys.setrecursionlimit((10 ** 7))  # 変更
+sys.setrecursionlimit((10 ** 7))  # 再帰数変更
 myinput=input#sys.stdin.readline
 
 from collections import defaultdict
@@ -59,9 +59,10 @@ class UnionFind():
     def __str__(self):
         return '\n'.join(f'{r}: {m}' for r, m in self.all_group_members().items())  
 
+#入力、空のリスト生成
 H,W=map(int,myinput().split())
 graph=[0]*(H*W+1)
-uf=UnionFind(H*W+1)
+uf=UnionFind(H*W+1) #インスタンス生成
 Q=int(myinput())
 
 for i in range(Q):
