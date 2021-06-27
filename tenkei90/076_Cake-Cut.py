@@ -30,7 +30,7 @@ while dis!=N:
     #ケーキをとる
     ans+=A[i]
     
-    #10分の1になったら探索終了
+    #10分の1になったら探索終了（sys.exit()）
     if ans==S:
         print("Yes")
         sys.exit()
