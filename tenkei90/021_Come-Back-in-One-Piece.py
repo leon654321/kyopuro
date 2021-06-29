@@ -61,7 +61,7 @@ class SCC:
             self.groups[lb].append(v)
         return self.dag, self.groups
 
-
+#入力
 N,M=map(int,input().split())
 
 scc=SCC(N)
