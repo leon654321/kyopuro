@@ -15,6 +15,5 @@ def eucrid(x,y):
 a,b,c=map(int,input().split())
 m=eucrid(a,b)
 m=eucrid(m,c)
-
 ans=(a//m-1)+(b//m-1)+(c//m-1)
 print(ans)
