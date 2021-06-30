@@ -24,7 +24,8 @@ for i in range(2,max(int(N**(1/2))+1,3)):
 #上のループの範囲外の素数を因数に持っていたら+1
 if N!=1 and cnt>0:
     cnt+=1
-
+    
+    
 #print(prime)
 #print(len(A))
 
