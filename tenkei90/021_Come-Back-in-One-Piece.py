@@ -1,3 +1,7 @@
+#問題文
+#https://atcoder.jp/contests/typical90/tasks/typical90_u
+
+#強連結成分分解のクラス
 class SCC:
     def __init__(self, n):
         self.n = n
@@ -64,9 +68,11 @@ class SCC:
 #入力
 N,M=map(int,input().split())
 
+#インスタンス生成
 scc=SCC(N)
 
 for _ in range(M):
+    #入力と道生成
     a,b=map(int,input().split())
     scc.add_edge(a-1,b-1)
 
@@ -75,6 +81,7 @@ x,y=scc.construct()
 
 ans=0
 for i in range(len(y)):
+    #各連結グループの大きさ
     z=len(y[i])
     ans+=z*(z-1)//2
 print(ans)
