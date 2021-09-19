@@ -1,42 +1,30 @@
 #問題文
 #https://atcoder.jp/contests/typical90/tasks/typical90_h
 
+#入力
 N=int(input())
 S=input()
 
-#少しでも速度を早くしたかったので.appendの呼び出しがなくなるようにした
-a=[]
-aappend=a.append
-t=[]
-tappend=t.append
-c=[]
-cappend=c.append
-o=[]
-oappend=o.append
-d=[]
-dappend=d.append
-e=[]
-eappend=e.append
-r=[]
-rappend=r.append
+#各文字定義
+a,t,c,o,d,e,r=0,0,0,0,0,0,0
 
 #Sを逆順で見ていってある文字（例えば"E"）があればそこから後ろに"R"
 #が何通り選べるかを蓄積していく。これを以後"D", "O",,,"A"と続けていけば
-#for文が終わった時点でのリストaの合計が解となる
+#for文が終わった時点でのa(AtCoderのイニシャル)の値が解となる
 for x in reversed(S):
     if x=="r":
-        rappend(1)
+        r+=1
     elif x=="e":
-        eappend(sum(r))
+        e+=r
     elif x=="d":
-        dappend(sum(e))
+        d+=e
     elif x=="o":
-        oappend(sum(d))
+        o+=d
     elif x=="c":
-        cappend(sum(o))
+        c+=o
     elif x=="t":
-        tappend(sum(c))
+        t+=c
     elif x=="a":
-        aappend(sum(t))
+        a+=t
 
-print(sum(a)%(10**9+7))
+print(a%(10**9+7))
