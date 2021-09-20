@@ -1,4 +1,4 @@
-#遅延セグメント木の実装で[こちら](https://qiita.com/takayg1/items/b7b3f7d458915bcc7a4e)を大部分で参考にしました
+#遅延セグメント木の実装でこちらの記事(https://qiita.com/takayg1/items/b7b3f7d458915bcc7a4e)を大部分で参考にしました
 
 #####segfunc#####
 def segfunc(x, y):
