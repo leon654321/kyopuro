@@ -1,3 +1,6 @@
+#問題文
+https://atcoder.jp/contests/typical90/tasks/typical90_am
+
 import sys
 sys.setrecursionlimit((10 ** 9))  # 再帰回数変更
 
